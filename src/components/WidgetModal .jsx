@@ -65,7 +65,6 @@ const WidgetModal = ({ onClose, onAddWidget, onRemoveWidget }) => {
           Add Widgets
         </h2>
         <div className="p-6">
-          {/* Category Selection */}
           <div className="flex border-none bg-transparent mb-4">
             {categories.map((category) => (
               <button
@@ -82,7 +81,6 @@ const WidgetModal = ({ onClose, onAddWidget, onRemoveWidget }) => {
             ))}
           </div>
 
-          {/* Add Widget Section */}
           <div className="mb-4">
             <label className="block text-sm font-medium text-gray-700 mb-1">
               Widget Name
@@ -120,7 +118,6 @@ const WidgetModal = ({ onClose, onAddWidget, onRemoveWidget }) => {
             </button>
           </div>
 
-          {/* Cancel and Confirm Buttons */}
           {Object.keys(selectedWidgets).some(
             (category) => selectedWidgets[category].length > 0
           ) && (
@@ -140,7 +137,6 @@ const WidgetModal = ({ onClose, onAddWidget, onRemoveWidget }) => {
             </div>
           )}
 
-          {/* Display Widgets for Selected Category */}
           {currentCategory && (
             <>
               <h3 className="text-lg font-bold mt-6">Current Widgets</h3>

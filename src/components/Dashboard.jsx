@@ -2,7 +2,7 @@ import { useState } from "react";
 import DashboardNavigation from "./DashboardNavigation";
 import Slide from "./Slide";
 import WidgetModal from "./WidgetModal ";
-import { data } from "../assets/data"; // Import the data object
+import { data } from "../assets/data"; 
 
 const Dashboard = () => {
   const [widgets, setWidgets] = useState([]);
@@ -65,7 +65,7 @@ const Dashboard = () => {
         />
       )}
       <Slide
-        categories={data} // Pass the data to the Slide component
+        categories={data} 
         onOpenAddWidgetModal={openAddWidgetModal}
       />
     </div>
